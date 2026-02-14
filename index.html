@@ -1193,7 +1193,7 @@
             const video = ensureVideoFrame();
             const tapToPlay = document.getElementById('tapToPlay');
 
-            video.src = 'video/0208.mp4';
+            video.src = 'https://media.githubusercontent.com/media/ggoso/to-yeeun-message.github.io/main/video/0208.mp4';
             video.currentTime = 0;
 
             const tryPlay = () => {
@@ -1439,7 +1439,7 @@
             const video = ensureVideoFrame();
             const tapToPlay = document.getElementById('tapToPlay');
 
-            video.src = 'video/test.mp4';
+            video.src = 'https://media.githubusercontent.com/media/ggoso/to-yeeun-message.github.io/main/video/0208.mp4';
             video.currentTime = 0;
 
             const tryPlay = () => {
@@ -1589,8 +1589,9 @@
             const video = ensureVideoFrame();
             const tapToPlay = document.getElementById('tapToPlay');
 
-            // Use the actual uploaded video file path
-            video.src = 'video/0208.mp4';
+            // GitHub Pages serves LFS pointer files for large assets.
+            // Use media.githubusercontent.com to stream the actual LFS object.
+            video.src = 'https://media.githubusercontent.com/media/ggoso/to-yeeun-message.github.io/main/video/0208.mp4';
             video.currentTime = 0;
 
             const tryPlay = () => {
